@@ -1,2 +1,4 @@
 # ebydanova.github.io
+<html>
 <iframe title="Symbol Map" aria-label="Symbol map" id="datawrapper-chart-uVx0s" src="https://datawrapper.dwcdn.net/uVx0s/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="638" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+</html>
