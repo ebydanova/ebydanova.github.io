@@ -5,7 +5,7 @@ filename: README.md
 --- 
 # ebydanova.github.io
 
-[Visualization 1 - Pyramid](/viz_1_pyramid)
+[Visualization 1 - Pyramid](/viz_1_pyramid.md)
 
 <html>
   <p>Viz 1</p>
