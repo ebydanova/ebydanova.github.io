@@ -1,5 +1,5 @@
 ---
-title: Vizualization - PEC 2
+title: Visualization - PEC 2
 layout: default
 filename: index
 --- 
