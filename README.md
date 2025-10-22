@@ -1,7 +1,7 @@
 ---
 title: Vizualization - PEC 2
 layout: default
-filename: README.md
+filename: README
 --- 
 # ebydanova.github.io
 
