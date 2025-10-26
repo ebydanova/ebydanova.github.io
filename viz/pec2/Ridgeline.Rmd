@@ -1,0 +1,80 @@
+---
+title: "Viz 3 - Ridgeline chart"
+author: "Elena Bydanova"
+date: 2025-10-26
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning=FALSE)
+```
+
+
+```{r load packages}
+# install.packages("ggplot2")
+library(ggplot2)
+library(tidyverse)
+# install.packages("ggridges")
+library(ggridges)
+```
+
+```{r load data}
+df <- read_csv('Qualitat_de_l’aire_Barcelona_NO2.csv', 
+                 col_types = '_cDncc______nnnnnnnnnnnnnnnnnnnnnnnn____',   # https://readr.tidyverse.org/reference/read_delim.html
+                 locale=locale(date_format="%d/%m/%Y", decimal_mark='.', grouping_mark=",")
+               )
+```
+
+
+```{r calc daily averages, include=FALSE}
+df$daily_avg <- rowMeans(df[6:29], na.rm=TRUE)
+df_avg <- df[c('NOM ESTACIO', 'DATA', 'CONTAMINANT', 'UNITATS', 'daily_avg')]
+df_avg
+```
+
+
+```{r calc avg of all stations in Barcelona, include=FALSE}
+df_bcn_avg <- df_avg %>% 
+  mutate(year = format(DATA, "%Y")) %>%
+  group_by(CONTAMINANT, UNITATS, DATA, year) %>%
+  summarise(bcn_avg = mean(daily_avg)) %>%
+  select(CONTAMINANT, UNITATS, DATA, year, bcn_avg)
+df_bcn_avg
+```
+
+
+```{r filter by NO2 contaminant, include=FALSE}
+df_bcn_avg_filtered <- df_bcn_avg %>%
+  filter(CONTAMINANT %in% c('NO2'))
+df_bcn_avg_filtered
+```
+
+
+
+```{r ridge, fig.height=12, fig.width=15, echo=FALSE}
+# Reverse the factor levels of the Category column
+df_bcn_avg_filtered$year <- as.factor(df_bcn_avg_filtered$year)
+df_bcn_avg_filtered$year_rev <- factor(df_bcn_avg_filtered$year, levels = rev(levels(df_bcn_avg_filtered$year)))
+
+df_bcn_avg_filtered %>%
+  ggplot(aes(x = bcn_avg, y = year_rev, fill = stat(x))) +
+  xlim(-15, 150) +
+  geom_density_ridges_gradient(scale = 3, rel_min_height = 0.0001, calc_ecdf = TRUE) +
+  scale_fill_viridis_c(name = expression(atop('Nivel NO'[2], '(µg/m'^3*')')), option = "turbo") +
+  theme_minimal(base_size = 20) +
+  labs(title = 'Calidad de aire en Barcelona',
+       subtitle = expression('Evolución de concentración promedia diaria de dióxido de nitrógeno (NO'[2]*')'),
+       x = expression('NO'[2]*' (µg/m'^3*')'),
+       y = 'Año') +
+  annotate("segment", x = -7, xend = -3, y = "2018", yend = "2020", colour = "blue", size=1, alpha=0.6, arrow=arrow()) +
+  annotate("text", x = -15, y = "2018", 
+           label = "COVID-19" , color="blue", 
+           size=5 , angle=0, fontface="bold")
+
+ggsave("ridgeline.png")
+
+# https://www.r-bloggers.com/2020/07/ive-been-waiting-for-a-guide-to-come-and-take-me-by-the-hand-ridgeline-plots-with-ggridges/
+
+```
+
+Source: [Generalitat de Catalunya, portal de dades obertes](https://analisi.transparenciacatalunya.cat/Medi-Ambient/Qualitat-de-l-aire-als-punts-de-mesurament-autom-t/tasf-thgu/about_data).
