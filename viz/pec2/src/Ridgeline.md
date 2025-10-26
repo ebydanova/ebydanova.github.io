@@ -162,9 +162,45 @@ df_bcn_avg_filtered
 
 Plot the result.
 
-![](Ridgeline_files/figure-html/ridge-1.png)<!-- -->
+
+``` r
+# https://www.r-bloggers.com/2020/07/ive-been-waiting-for-a-guide-to-come-and-take-me-by-the-hand-ridgeline-plots-with-ggridges/
+
+# Reverse the factor levels of the Year column
+# https://www.geeksforgeeks.org/r-language/creating-horizontal-bar-plots-in-the-reverse-direction-in-r/
+df_bcn_avg_filtered$year <- as.factor(df_bcn_avg_filtered$year)
+df_bcn_avg_filtered$year_rev <- factor(df_bcn_avg_filtered$year, levels = rev(levels(df_bcn_avg_filtered$year)))
+
+df_bcn_avg_filtered %>%
+  # https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html
+  ggplot(aes(x = bcn_avg, y = year_rev, fill = after_stat(x), height = after_stat(density))) +
+  xlim(-15, 150) +
+  # https://r-charts.com/distribution/ggridges/#color
+  geom_density_ridges_gradient(scale = 3, rel_min_height = 0.005, stat = "density") +
+  scale_fill_viridis_c(name = expression(atop('Nivel NO'[2], '(µg/m'^3*')')), option = "turbo") +
+  # increase font size everywhere
+  # https://ggplot2.tidyverse.org/articles/faq-customising.html#how-can-i-change-the-default-font-size-in-ggplot2
+  theme_minimal(base_size = 20) +
+  # increase title size
+  # https://www.geeksforgeeks.org/r-language/how-to-change-font-size-of-plot-title-when-the-title-is-a-variable-in-ggplot2-in-r/
+  theme(plot.title = element_text(size = 32, face = "bold")) +
+  labs(title = 'Calidad de aire en Barcelona',
+       subtitle = expression('Evolución de concentración promedia diaria de dióxido de nitrógeno (NO'[2]*')'),
+       x = expression('NO'[2]*' (µg/m'^3*')'),
+       y = 'Año') +
+  annotate("segment", x = -7, xend = 0, y = "2018", yend = "2020", colour = "blue", linewidth=1, alpha=0.6, arrow=arrow()) +
+  annotate("text", x = -15, y = "2018", 
+           label = "COVID-19" , color="blue", 
+           size=5 , angle=0, fontface="bold")
+```
+
+![](viz3-ridge-1.png)<!-- -->
 
 
+
+``` r
+ggsave("ridgeline.png")
+```
 
 ```
 ## Saving 15 x 12 in image
