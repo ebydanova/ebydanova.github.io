@@ -164,6 +164,8 @@ Plot the result.
 
 ![](Ridgeline_files/figure-html/ridge-1.png)<!-- -->
 
+
+
 ```
 ## Saving 15 x 12 in image
 ```
