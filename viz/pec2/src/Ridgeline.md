@@ -190,7 +190,7 @@ df_bcn_avg_filtered %>%
        y = 'Año') +
   annotate("segment", x = -7, xend = 0, y = "2018", yend = "2020", colour = "blue", linewidth=1, alpha=0.6, arrow=arrow()) +
   annotate("text", x = -15, y = "2018", 
-           label = "COVID-19" , color="blue", 
+           label = "COVID-19\n& ZBE" , color="blue", 
            size=5 , angle=0, fontface="bold")
 ```
 
