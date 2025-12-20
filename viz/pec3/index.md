@@ -9,5 +9,5 @@ filename: pec_3_data_storytelling
   <small>Source 1: <a href="https://aula.uoc.edu/courses/61419/files/8395157/download?download_frd=1">Hotel bookings dataset provided by UOC</a>, accessed 08/12/2025</small>
   <br><small>Source 2: <a href="https://www.ncei.noaa.gov/cdo-web/datasets/GHCND/locations/FIPS:PO/detail">Portugal daily weather summaries from NOAA web</a>, accessed 19/12/2025</small>
   <br><small>Preprocessed with RStudio and visualized with Tableau by Elena Bydanova Puchkova (see <a href="https://public.tableau.com/views/Viz-PEC3-Hotelbookingsstory/Aretouristsafraidofbadweather?:language=es-ES&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">publication in Tableau Public</a>)</small>
-  <br><small><a href="https://github.com/ebydanova/ebydanova.github.io/blob/main/viz/pec3/data/hotel_bookings_preprocessed.csv">Download transformed data</a></small>
+  <br><small><a href="https://github.com/ebydanova/ebydanova.github.io/blob/main/viz/pec3/data/hotel_bookings_preprocessed.zip">Download transformed data</a></small>
 </html>
