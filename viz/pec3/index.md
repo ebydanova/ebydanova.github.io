@@ -33,5 +33,5 @@ filename: pec_3_data_storytelling
 
 <p>At this point, a curious reader can return to the beginning of our story, select market segments other than "Groups," and again visualize the behavior of travelers and its monthly changes (this time, supposedly, real travelers, not empty bookings). They can even focus on tourists from their country or a specific type of hotel they prefer. They will see that, although the overall picture shows more cancellations on relatively colder and rainier days, this relationship becomes more or less random when analyzed month by month.</p>
 
-<h4>Tourists aren't exactly made of cotton candy and bad weather is unlikely to make them change their plans... unless one of the other 1001 possible reasons has already done so.</h4>
+<h3>Tourists aren't exactly made of cotton candy and bad weather is unlikely to make them change their plans... unless one of the other 1001 possible reasons has already done so.</h3>
 </html>
