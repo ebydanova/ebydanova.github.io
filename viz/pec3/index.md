@@ -13,11 +13,11 @@ filename: pec_3_data_storytelling
 
 <br>
 <h2>The Story</h2>
-<h4>Many people book hotels well in advance. Weather forecasts typically cover a maximum of two weeks. So, what happens if the weather is worse than expected on the day of arrival?</h4>
+<p><strong>Many people book hotels well in advance. Weather forecasts typically cover a maximum of two weeks. So, what happens if the weather is worse than expected on the day of arrival?</strong></p>
 
 <p>Let's look at the cancellation rate based on booking lead time and the weather on arrival day. Those who book at most one week in advance tend to stick to their plan, canceling only about 10% of their reservations, with no apparent correlation to the temperature or rainfall. This suggests they were already aware of the potential impact. However, those who book up to one month in advance are also unaffected by the weather. It's only after one month that we start to see more cancellations on colder or rainier days. Okay, we already knew this – tourists are afraid of bad weather. But what about bookings made a year or more in advance? The pattern becomes more complicated, and, interestingly, many bookings are canceled when it's <strong>not</strong> raining and the temperature is quite pleasant, between 18 and 24°C. <strong>Now, how do we explain that?</strong></p>
 
-<h4>Perhaps the problem is that 18°C ​​in January is not the same as 18°C ​​in August. Let's take a journey through time and see if our pattern of tourists being scared off by (relative) cold is consistent over months.</h4>
+<p><strong>Perhaps the problem is that 18°C ​​in January is not the same as 18°C ​​in August. Let's take a journey through time and see if our pattern of tourists being scared off by (relative) cold is consistent over months.</strong></p>
 
 <p>We start in July 2015 and see that for bookings up to six months in advance, there are more cancellations when it's below 23°C, which we can understand. But… here are 75 bookings made a year ago for days when it was 19°C and raining (remember, this is July!), and most of them have arrived, while the bookings for warmer days have almost all been canceled.</p>
 
@@ -29,9 +29,9 @@ filename: pec_3_data_storytelling
 
 <img src="anomaly.png" alt="Strange booking pattern">
 
-<h4>It seems that it's not bad weather that's driving away customers, but rather group bookings made "just in case" without even having real people behind them.</h4>
+<p><strong>It seems that it's not bad weather that's driving away customers, but rather group bookings made "just in case" without even having real people behind them.</strong></p>
 
 <p>At this point, a curious reader can return to the beginning of our story, select market segments other than "Groups," and again visualize the behavior of travelers and its monthly changes (this time, supposedly, real travelers, not empty bookings). They can even focus on tourists from their country or a specific type of hotel they prefer. They will see that, although the overall picture shows more cancellations on relatively colder and rainier days, this relationship becomes more or less random when analyzed month by month.</p>
 
-<h3>Tourists aren't exactly made of cotton candy and bad weather is unlikely to make them change their plans... unless one of the other 1001 possible reasons has already done so.</h3>
+<p><strong>Tourists aren't exactly made of cotton candy and bad weather is unlikely to make them change their plans... unless one of the other 1001 possible reasons has already done so.</strong></p>
 </html>
