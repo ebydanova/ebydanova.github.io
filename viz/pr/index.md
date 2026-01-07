@@ -8,26 +8,28 @@ filename: practica
     <style>
       .grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
       }
     </style>
   </head>
   <h2>La ruleta de la sort</h2>
 
-  <p>Ja ha acabat el primer trimestre del curs escolar 2025-26. Per a moltes famílies ha sigut un canvi d'etapa perquè els seus nens han començat infantil, primaria o ESO, o bé perquè han canviat del centre educatiu. Alguns, però, no han aconseguit plaça a l'escola que volien i han acabat en una altra, no sempre del seu gust. Aquest any en tota Catalunya <strong>91,5% dels alumnes</strong> que es van inscriure a <strong>I3 han tingut sort</strong> i van rebre assignació a un centre triat en la primera opció - bé per tenir germans al mateix centre, bé per reunir altres puntuacions altes o bé per guanyar el sorteig de places. Tot i això, <strong>11% de les places es van quedar vacants</strong> i ratio per grup de mitjana es va quedar en <strong>18 alumnes per classe</strong>, per sota dels límits objectiu. Evidentment, alguns centres son més sol·licitats que altres.</p>
+  <p>Ja ha acabat el primer trimestre del curs escolar 2025-26. Per a moltes famílies ha sigut un canvi d'etapa perquè els seus nens han començat infantil, primaria o ESO, o bé perquè han canviat de centre educatiu. Alguns, però, no han aconseguit plaça a l'escola que volien i han acabat en una altra, no sempre del seu gust. Aquest any en tota Catalunya <strong>91,5% dels alumnes</strong> que es van inscriure a <strong>I3 han tingut sort</strong> i van rebre assignació a un centre triat en la primera opció - bé per tenir germans al mateix centre, bé per reunir altres puntuacions altes, bé per guanyar el sorteig de places... o bé perquè sobraven places. De fet, <strong>11% de les places es van quedar vacants</strong> i ratio per grup de mitjana es va quedar en <strong>18 alumnes per classe</strong>, per sota dels límits objectiu. Evidentment, alguns centres son més sol·licitats que altres.</p>
 
-  <p><strong>Aquesta situació, ¿és la mateixa entre comarques?</strong></p>  
-  
   <p>Així van anar les preinscripcions d'aquest curs per a 1r d'educació infantil (I3):</p>
 
   <div class="grid">
     <div style="min-height:360px" id="datawrapper-vis-a7vM3"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/a7vM3/embed.js" charset="utf-8" data-target="#datawrapper-vis-a7vM3"></script><noscript><img src="https://datawrapper.dwcdn.net/a7vM3/full.png" alt="Assignats en 1a petició (Choropleth map)" /></noscript></div>
     <div style="min-height:360px" id="datawrapper-vis-D2mVd"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/D2mVd/embed.js" charset="utf-8" data-target="#datawrapper-vis-D2mVd"></script><noscript><img src="https://datawrapper.dwcdn.net/D2mVd/full.png" alt="Places vacants (Choropleth map)" /></noscript></div>
-    <div style="min-height:360px" id="datawrapper-vis-Gzsk5"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/Gzsk5/embed.js" charset="utf-8" data-target="#datawrapper-vis-Gzsk5"></script><noscript><img src="https://datawrapper.dwcdn.net/Gzsk5/full.png" alt="Ratios per grup (Choropleth map)" /></noscript></div>
   </div>
 
-  <p>Obviament, no és el mateix fer preinscripcions a Priorat, Aran o Maresme.</p>
+  <div class="grid">
+    <div style="min-height:360px" id="datawrapper-vis-Gzsk5"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/Gzsk5/embed.js" charset="utf-8" data-target="#datawrapper-vis-Gzsk5"></script><noscript><img src="https://datawrapper.dwcdn.net/Gzsk5/full.png" alt="Ratios per grup (Choropleth map)" /></noscript></div>
+    <div style="min-height:360px" id="datawrapper-vis-ag7YU"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/ag7YU/embed.js" charset="utf-8" data-target="#datawrapper-vis-ag7YU"></script><noscript><img src="https://datawrapper.dwcdn.net/ag7YU/full.png" alt="Places totals vs població (Choropleth map)" /></noscript></div>
+  </div>
+
+  <p>Obviament, no és el mateix fer preinscripcions a Priorat (poca població i escoles rurals amb grups mixtos), Aran (molta oferta de places tenint ratios elevats) o Garraf (oferta ajustada i gairebé no hi ha vacants).</p>
 
   <p>A més a més, la situació ha anat empitjorant al llarg dels anys.</p>
 
