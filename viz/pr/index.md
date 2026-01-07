@@ -23,7 +23,9 @@ filename: practica
     <div style="min-height:360px" id="datawrapper-vis-a7vM3"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/a7vM3/embed.js" charset="utf-8" data-target="#datawrapper-vis-a7vM3"></script><noscript><img src="https://datawrapper.dwcdn.net/a7vM3/full.png" alt="Assignats en 1a petició (Choropleth map)" /></noscript></div>
     <div style="min-height:360px" id="datawrapper-vis-D2mVd"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/D2mVd/embed.js" charset="utf-8" data-target="#datawrapper-vis-D2mVd"></script><noscript><img src="https://datawrapper.dwcdn.net/D2mVd/full.png" alt="Places vacants (Choropleth map)" /></noscript></div>
   </div>
-
+  
+  <p></p>
+  
   <div class="grid">
     <div style="min-height:360px" id="datawrapper-vis-Gzsk5"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/Gzsk5/embed.js" charset="utf-8" data-target="#datawrapper-vis-Gzsk5"></script><noscript><img src="https://datawrapper.dwcdn.net/Gzsk5/full.png" alt="Ratios per grup (Choropleth map)" /></noscript></div>
     <div style="min-height:360px" id="datawrapper-vis-ag7YU"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/ag7YU/embed.js" charset="utf-8" data-target="#datawrapper-vis-ag7YU"></script><noscript><img src="https://datawrapper.dwcdn.net/ag7YU/full.png" alt="Places totals vs població (Choropleth map)" /></noscript></div>
