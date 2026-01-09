@@ -13,7 +13,7 @@ filename: practica
       }
     </style>
   </head>
-  <h2>La ruleta de la sort</h2>
+  <h2>Preinscripcions escolars: la ruleta de la sort</h2>
 
   <p>Ja ha acabat el primer trimestre del curs escolar 2025-26. Per a moltes famílies ha sigut un canvi d'etapa perquè els seus nens han començat infantil, primaria o ESO, o bé perquè han canviat de centre educatiu. Alguns, però, no han aconseguit plaça a l'escola que volien i han acabat en una altra, no sempre del seu gust. Aquest any en tota Catalunya <strong>91,5% dels alumnes</strong> que es van inscriure a <strong>I3 han tingut sort</strong> i van rebre assignació a un centre triat en la primera opció - bé per tenir germans al mateix centre, bé per reunir altres puntuacions altes, bé per guanyar el sorteig de places... o bé perquè sobraven places. De fet, <strong>11% de les places es van quedar vacants</strong> i ràtio per grup de mitjana es va quedar en <strong>18 alumnes per classe</strong>, per sota dels límits objectiu. Evidentment, alguns centres son més sol·licitats que altres.</p>
 
